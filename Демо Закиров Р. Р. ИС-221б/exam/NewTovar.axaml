@@ -1,0 +1,40 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+         xmlns:dg="clr-namespace:Avalonia.Controls;assembly=Avalonia.Controls.DataGrid"
+         xmlns:i="clr-namespace:Avalonia.Xaml.Interactivity;assembly=Avalonia.Xaml.Interactivity"
+        mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="1000"
+        Width="450" 
+        Height="1000"
+        x:Class="exam.NewTovar"
+        Title="Новый Товар">
+    <StackPanel Margin="10" Orientation="Vertical" HorizontalAlignment="Center">
+        <TextBlock Margin="20,0,0,0" Text="Артикул" FontSize="14" Foreground="Black" />
+        <TextBox Margin="10,0,10,10" Name="Box0" Watermark="Артикул" Width="400" />
+        <TextBlock Margin="20,0,0,0" Text="Наименование товара" FontSize="14" Foreground="Black" />
+        <TextBox Margin="10,0,10,10" Name="Box1" Watermark="Наименование товара" Width="400" />
+        <TextBlock Margin="20,0,0,0" Text="Единица_измерения" FontSize="14"/>
+        <TextBox Margin="10,0,10,10" Name="Box2" Watermark="Единица_измерения" Width="400" Foreground="Black"/>
+        <TextBlock Margin="20,0,0,0" Text="Цена" FontSize="14" />
+        <TextBox Margin="10,0,10,10" Name="Box3" Watermark="Цена" Width="400" Foreground="Black"/>
+        <TextBlock Margin="20,0,0,0" Text="Поставщик" FontSize="14" />
+        <TextBox Margin="10,0,10,10" Name="Box4" Watermark="Поставщик" Width="400" Foreground="Black"/>        
+        <TextBlock Margin="20,0,0,0" Text="Производитель" FontSize="14" />
+        <TextBox Margin="10,0,10,10" Name="Box5" Watermark="Производитель" Width="400" Foreground="Black"/>        
+        <TextBlock Margin="20,0,0,0" Text="Категория_товара" FontSize="14" />
+        <TextBox Margin="10,0,10,10" Name="Box6" Watermark="Категория_товара" Width="400" Foreground="Black"/>        
+        <TextBlock Margin="20,0,0,0" Text="Действующая_скидка" FontSize="14" />
+        <TextBox Margin="10,0,10,10" Name="Box7" Watermark="Действующая_скидка" Width="400" Foreground="Black"/>        
+        <TextBlock Margin="20,0,0,0" Text="Кол_во_на_складе" FontSize="14" />
+        <TextBox Margin="10,0,10,10" Name="Box8" Watermark="Кол_во_на_складе" Width="400" Foreground="Black"/>      
+        <TextBlock Margin="20,0,0,0" Text="Описание_товара" FontSize="14"   />
+        <TextBox Margin="10,0,10,10" Name="Box9" Watermark="Описание_товара" Width="400" Height="100" Foreground="Black"/>                   
+
+        <StackPanel Margin="10" Orientation="Horizontal" HorizontalAlignment="Right">
+        <Button Name="OkButton" Content="Сохранить" Margin="0,5,0,0"/>
+        <Button Name="ExitButton"  Content="Отмена"  Margin="0,5,0,0"/>
+        </StackPanel>
+    </StackPanel>
+
+</Window>

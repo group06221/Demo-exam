@@ -1,0 +1,67 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1400" d:DesignHeight="1400"
+        
+        Icon="/Assets/icon.ico"
+        x:Class="exam.SecondWindow"
+        Title="Магаз">
+
+    <DockPanel Margin="20" >
+    <Grid RowDefinitions="10*,90*">
+
+    <Border Grid.Row="0" Background="#FFDEAD" Height="40" Margin="-20" VerticalAlignment="Top">
+    
+    <Grid ColumnDefinitions="Auto,*,40">
+    <TextBlock Grid.Column="1"
+    Text="Товары"
+    HorizontalAlignment="Center"
+    VerticalAlignment="Center"
+    FontWeight="Bold" FontSize="20"/>
+        <TextBlock Grid.Column="1"
+    Text="Гость"
+    Name="User_name"
+    HorizontalAlignment="Left"
+    VerticalAlignment="Center"
+    FontWeight="Bold" FontSize="14"/>
+    <Button Grid.Column="1" Name="ExitButton"  Content="Выход"  HorizontalAlignment="Right" />
+
+    </Grid>
+    </Border>
+
+    <StackPanel Grid.Row="1" Name="Navigation" Margin="20"  Orientation="Vertical" HorizontalAlignment="Left" IsVisible="False">
+
+        <StackPanel  Name="Search" Margin="20"  Orientation="Horizontal" HorizontalAlignment="Left">
+        <TextBox Margin="10" Name="Searchbox" Watermark="Поиск" Width="200" Foreground="Black"/>        
+        </StackPanel>
+        <ListBox Name="ShopCheckl" HorizontalAlignment="Left" IsVisible="True" />
+        <ListBox Name="OrderCheckl" HorizontalAlignment="Left" IsVisible="False"/>
+
+
+        
+
+    </StackPanel>
+    <StackPanel Grid.Row="1" Name="Navigation2" Margin="20"  Orientation="Vertical" HorizontalAlignment="Right" IsVisible="False">
+        <Button Name="OrderButton"  Content="Заказы"  Margin="0,5,0,0" />
+        <Button Name="AddButton"  Content="Добавить"  Margin="0,5,0,0" IsVisible="False"/>
+    </StackPanel>
+    
+
+
+    <StackPanel Grid.Row="1"  Margin="10"  Orientation="Vertical" HorizontalAlignment="Center">
+
+    <Border Height="1000">
+    <ScrollViewer VerticalAlignment="Top">
+        <Canvas Name="Back" Height="1000" Width="1000" />
+    </ScrollViewer>
+    </Border>
+
+    </StackPanel>
+
+  
+    </Grid>
+    </DockPanel>
+    
+    
+</Window>
